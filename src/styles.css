@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos golobais */
+
+/*Cor aplicada na validação do login e senha */
+.ng-valid[required],.ng-valid.required{
+    border-left: 5px solid #42a948;
+}
+.ng-invalid:not(form){
+    border-left: 5px solid #a94442;
+}
