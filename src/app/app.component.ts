@@ -12,12 +12,4 @@ import { LoginServiceService } from './service/login-service.service';
 export class AppComponent {
   title = 'xcode';
 
-  //variaveis que representam o objeto do formulario
-  usuario ={login: '', senha: ''}; 
-
-  constructor (private loginService: LoginServiceService){}
-
-   public login(){
-     this.loginService.login(this.usuario);
-   }
 }

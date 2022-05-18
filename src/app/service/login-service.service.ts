@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { error } from '@angular/compiler/src/util';
 import { Injectable } from '@angular/core';
 import { AppConstants } from '../app-constants';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginServiceService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private router: Router) { }
 
   login(usuario:any){
     
@@ -20,6 +21,8 @@ export class LoginServiceService {
     localStorage.setItem("token",token);
 
     console.info("Token "+localStorage.getItem("token"));
+
+    this.router.navigate(['home']);
 
     },
       error =>{
