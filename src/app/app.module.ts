@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import {RouterModule,Routes} from '@angular/router'
 import { ModuleWithProviders } from '@angular/core';
 import { LoginComponent } from './login/login.component';
+import { HttpInterceptorModule } from './service/header-interceptor.service';
 //correção do erro da linha export const routes : ModuleWithProviders  
 declare module "@angular/core" {
   interface ModuleWithProviders<T = any> {
@@ -41,7 +42,8 @@ export const routes : ModuleWithProviders = RouterModule.forRoot(appRouters);
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    routes
+    routes,
+    HttpInterceptorModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
