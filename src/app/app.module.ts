@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+
+
 //importação do formulario para receber dados 
 import { FormsModule } from '@angular/forms'; 
 //import para conseguir usar as reuisições ajax
@@ -21,6 +24,9 @@ declare module "@angular/core" {
   }
 }
 
+
+
+
 //declaração da exportação da configuração de rotas
 export const appRouters: Routes = [
   //chama o home components ao digitar home que direciona para pagina html
@@ -35,6 +41,7 @@ export const routes : ModuleWithProviders = RouterModule.forRoot(appRouters);
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HomeComponent,
     LoginComponent,

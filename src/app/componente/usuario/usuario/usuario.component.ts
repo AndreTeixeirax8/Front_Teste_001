@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { UsuarioService } from 'src/app/service/usuario.service';
 
+
 @Component({
   selector: 'app-usuario',
   templateUrl: './usuario.component.html',
